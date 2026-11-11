@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sesuai input soal -->
+        <EditText android:id="@+id/etNik" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nomor Induk Karyawan" android:inputType="text"/>
+        <EditText android:id="@+id/etNama" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Karyawan" android:inputType="textPersonName"/>
+        <EditText android:id="@+id/etGajiPokok" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gaji Pokok" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/etTunjanganJabatan" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tunjangan Jabatan" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/etHariKerja" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Jumlah Hari Kerja" android:inputType="number"/>
+
+        <Button android:id="@+id/btnHitung" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HITUNG" android:backgroundTint="#008CBA" android:textColor="@android:color/white" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+
+        <!-- Sesuai output soal -->
+        <TextView android:id="@+id/tvTunjanganMakan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tunjangan Makan" android:paddingTop="10dp" android:textSize="16sp" android:background="@android:drawable/editbox_background"/>
+        <TextView android:id="@+id/tvTunjanganTransport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tunjangan Transportasi" android:paddingTop="10dp" android:textSize="16sp" android:layout_marginTop="5dp" android:background="@android:drawable/editbox_background"/>
+        <TextView android:id="@+id/tvGajiKotor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gaji Kotor" android:paddingTop="10dp" android:textSize="16sp" android:layout_marginTop="5dp" android:background="@android:drawable/editbox_background"/>
+        <TextView android:id="@+id/tvGajiBersih" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gaji Bersih" android:paddingTop="10dp" android:textSize="16sp" android:layout_marginTop="5dp" android:background="@android:drawable/editbox_background"/>
+
+        <Button android:id="@+id/btnKembaliGaji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kembali" android:layout_marginTop="20dp" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>
